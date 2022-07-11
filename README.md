@@ -7,7 +7,299 @@
     <title>Document</title>
     <link rel="stylesheet" href="css\base初始化.css">
     <link rel="stylesheet" href="css\normalize.css">
-    <link rel="stylesheet" href="css\index.css">
+   <style>
+       body {
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+    color: #000;
+    background: #f2f2f2;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?sy3otm');
+    src:  url('../fonts/icomoon.eot?sy3otm#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?sy3otm') format('truetype'),
+      url('../fonts/icomoon.woff?sy3otm') format('woff'),
+      url('../fonts/icomoon.svg?sy3otm#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+    }
+
+.serch_index{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 540px;
+    min-width: 320px;
+    height: 44px;
+    background-color: #f6f6f6;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.serch{
+    position: relative;
+    height: 26px;
+    flex: 1;
+    border: 1px solid #ccc;
+    margin: 7px 10px;
+    border-radius: 4px;
+    box-shadow: 0px 3px 4px rgb(0,0,0,0.3);  
+    line-height: 24px;
+    font-size: 12px;
+    color: #666;  
+    padding-left: 27px;
+}
+.serch::before{
+   position: absolute;
+   top: 7px;
+   left: 5px;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: url(../images/sprite.png) no-repeat -60px -280px;
+    background-size: 104px auto;
+
+}
+.user{
+    width: 44px;
+    height: 44px;
+    font-size: 12px;
+    text-align: center;
+    color: #2eaae0;
+}
+.user::before{
+    content: "";
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url(../images/sprite.png) -58px -194px;
+    background-size: 104px auto;
+    margin: 2px 10px 0px 10px;
+   
+}
+.fous{
+    margin-top: 44px;
+}
+.fous img{
+    width: 100%;
+}
+.nav{
+    display: flex;
+    height: 64px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 3px 4px;
+}
+.nav li{
+    flex: 1;
+    height: 100%;
+}
+.nav a{
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color:#222
+
+}
+.nav .name{
+    width: 32px;
+    height: 32px;
+    background: url(../images/localnav_bg.png) no-repeat;
+    background-size: 32px auto;
+    margin-top: 8px;
+}
+.nav li:nth-child(2) .name{
+    width: 32px;
+    height: 32px;
+    background: url(../images/localnav_bg.png) no-repeat 0 -64px;
+    background-size: 32px auto;
+    margin-top: 8px;
+}
+.nav li:nth-child(3) .name{
+    width: 32px;
+    height: 32px;
+    background: url(../images/localnav_bg.png) no-repeat 0 -96px;
+    background-size: 32px auto;
+    margin-top: 8px;
+}
+.nav li:nth-child(4) .name{
+    width: 32px;
+    height: 32px;
+    background: url(../images/localnav_bg.png) no-repeat 0 -128px;
+    background-size: 32px auto;
+    margin-top: 8px;
+}
+.nav li:nth-child(5) .name{
+    width: 32px;
+    height: 32px;
+    background: url(../images/localnav_bg.png) no-repeat 0 -32px;
+    background-size: 32px auto;
+    margin-top: 8px;
+}
+.navs{
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 3px 4px;
+}
+.navs_a{
+    display: flex;
+    height: 88px;
+   
+}
+.navs_aa{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.navs_aa a{
+    flex: 1;
+    text-align: center;
+    line-height: 44px;
+}
+.navs_aa a:nth-child(n+2){
+    border-top: 1px solid #ccc;
+}
+.navs_a:nth-child(2){
+    margin: 3px 0;
+}
+.navs_aa:nth-child(-n+2){
+    border-right: 1px solid #ccc;
+}
+.navs_aa:nth-child(1) a{
+    background: url(../images/hotel.png) no-repeat bottom;
+    background-size: 121px auto;
+  background-position: center bottom;
+}
+.navs_a:nth-child(1){
+    background: -webkit-linear-gradient(left ,#fa5a55,#fa994d);
+}
+.navs_a:nth-child(2){
+    background: -webkit-linear-gradient(left ,#44c8f1,#3591e8);
+}
+.navs_a:nth-child(3){
+    background: -webkit-linear-gradient(left ,#71e98b,#3fd128);
+}
+
+
+
+.navb{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    margin: 3px 4px;
+    background-color: #fff;
+}
+.navb li{
+    flex: 20%;
+}
+.navb li a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+}
+.bj{
+    width: 28px;
+    height: 28px;
+    background: url(../images/subnav-bg.png) no-repeat;
+    background-size: 28px auto;
+    margin-top: 10px;
+}
+
+
+.hot{
+    margin: 3px 4px;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    background-color: #fff;
+}
+.hot_hd{
+    position: relative;
+    padding-top: 20px;
+  width:100%;
+  height: 44px;
+  border-bottom: 1px solid #ccc;
+
+}
+.hot_hd h2{
+    margin-left: 7px;
+    width: 79px;
+    height: 15px;
+    background: url(../images/hot.png) no-repeat 0 -20px;
+    background-size: 79px auto;
+    text-indent: 999px;
+}
+.hot_hd a{
+    position: absolute;
+    top: 12px;
+    right: 10px;
+   color: #fff;
+    border-radius: 15px;
+    padding: 3px 20px 3px 10px;
+    background: -webkit-linear-gradient(left, #FF506C, #FF6BC6);
+}
+
+.row{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+.row a{
+    flex: 1;
+}
+.row a img{
+   width: 100%;
+}
+
+.row a:nth-child(1){
+    border-right: 1px solid #ccc;
+}
+
+.app{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 12px;
+        
+}
+.app a{
+ display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    min-width: 100px;
+}
+.xinxi{
+    text-align: center;
+}
+.xinxi a{
+    margin: 10px 40px;
+}
+.xinxi p{
+    padding-top: 10px;
+}
+
+.app a span::before{
+    margin-right: 4px;
+    font-family: 'icomoon';
+    content: "\e9c7";
+    font-size: 10px;
+}
+Footer
+© 2022 GitHub, Inc.
+    </style>
 </head>
 <body>
     <!-- 搜索 -->
