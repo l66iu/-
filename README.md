@@ -18,17 +18,7 @@
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
 }
-@font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?sy3otm');
-    src:  url('../fonts/icomoon.eot?sy3otm#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf?sy3otm') format('truetype'),
-      url('../fonts/icomoon.woff?sy3otm') format('woff'),
-      url('../fonts/icomoon.svg?sy3otm#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-    }
+
 
 .serch_index{
     display: flex;
@@ -404,7 +394,4 @@
     </div>
 </body>
 </html>
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
+
