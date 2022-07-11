@@ -297,8 +297,7 @@
     content: "\e9c7";
     font-size: 10px;
 }
-Footer
-© 2022 GitHub, Inc.
+
     </style>
 </head>
 <body>
